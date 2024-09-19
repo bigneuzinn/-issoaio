@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Clima</title>
+</head>
+<body>
+    <div class="container">
+        <h1 onclick="location.href ='index.html'">Previsão do Tempo</h1>
+        <p>Digite o nome da Cidade</p>
+        <div class="input-group">
+            <input type="text" id="cidade" placeholder="Nome da cidade">
+            <button onclick="getWeather()">Pesquisar</button>
+        </div>
+        <div id="temperatura">Esperando...</div>
+    </div>
+
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 18px;
+}
+
+
+.input-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+
+}
+
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; 
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #0072ff;
+    outline: none;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0072ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 120px;
+}
+
+
+button:hover {
+    background-color: #005bb5;
+}
+
+
+#temperatura {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Inclui o Axios -->
+    <script>
+        async function getWeather() {
+            //Variavel que pega o valor do Input cidade
+            var cidade = document.getElementById('cidade').value
+        
+        
+            //Conectando a API
+            var resposta = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=64ed82577ced7f69cb1687f0ce536131`)
+        
+            //Variavel para consumir o JSON do item temperatura
+            var TempCelsius = resposta.data.main.temp;
+        
+            console.log(TempCelsius)
+            //Imprimir na tela fornt-end utilizando JQUERY
+            document.getElementById('temperatura').innerHTML = `A temperatura atual de ${cidade} é: ${TempCelsius.toFixed(0)} °C`
+        
+        
+        }  
+        //Chamar a Função
+        getWeather()
+    </script>
+</body>
+</html>
