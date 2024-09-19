@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title onclick="location.href ='index.html'">Matue - Cantor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #282c34;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffcc00;
+            text-align: center;
+        }
+        .artist {
+            background: #3c3f41;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .musicas {
+            list-style-type: none;
+            padding: 0;
+        }
+        .musicas li {
+            background: #ffcc00;
+            color: #282c34;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .musicas a {
+            text-decoration: none;
+            color: #282c34;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>Matue - Cantor e Rapper</h1>
+    <div id="artist-info" class="artist"></div>
+
+    <script>
+        // Dados do cantor em formato JSON
+        const matueData = {
+            "nome": "Matue",
+            "nomeCompleto": "Matheus Araújo",
+            "nascimento": "24 de julho de 1998",
+            "nacionalidade": "Brasileiro",
+            "genero": "Rap, Trap",
+            "principaisMusicas": [
+                {
+                    "titulo": "Kenny G",
+                    "link": "https://youtu.be/b-PhvPKgWjY?si=xUcKCbPbklm6HB1n"
+                },
+                {
+                    "titulo": "Anos Luz",
+                    "link": "https://youtu.be/m226f2reF28?si=g-BOZiHvbA3IBxKT"
+                },
+                {
+                    "titulo": "M4",
+                    "link": "https://youtu.be/cMTrUCasbss?si=kGULmkPFlqm0j6mY"
+                },
+                {
+                    "titulo": "A morte do autotune",
+                    "link": "https://youtu.be/CUFMfGu1yQc?si=80MsI_16vrY-OK6i"
+                },
+                {
+                    "titulo": "Quer Voar",
+                    "link": "https://youtu.be/KwM4yOwMls4?si=xBnIAUNsxnuzlDt6"
+                }
+            ],
+            "biografia": "Matue é um rapper brasileiro que ganhou destaque na cena musical com seu estilo único e letras impactantes. Ele é conhecido por suas colaborações com outros artistas e por sua habilidade em misturar diferentes gêneros musicais.",
+            "imagens": [
+                "https://noize.com.br/wp-content/uploads/2023/12/DSC8327-1-scaled-e1701983002434.jpg",
+                "https://jornalvozativa.com/wp-content/uploads/2024/09/jornal-voz-ativa-ouro-preto-mg-minas-gerais-op-materia-matue-narra-uma-odisseia-no-rap-em-novo-album-assista-ao-clipe-de-crack-com-mussilon-11092024113730.jpg", 
+                "https://www.opovo.com.br/_midias/jpg/2022/04/22/818x460/1_matue_feat_internacional-18603792.jpg"  
+            ]
+        };
+
+        // Função para exibir as informações do cantor
+        function displayArtistInfo(data) {
+            const artistDiv = document.getElementById('artist-info');
+            artistDiv.innerHTML = `
+                <h2>${data.nome} (${data.nacionalidade})</h2>
+                <p><strong>Nome Completo:</strong> ${data.nomeCompleto}</p>
+                <p><strong>Data de Nascimento:</strong> ${data.nascimento}</p>
+                <p><strong>Gênero:</strong> ${data.genero}</p>
+                <p><strong>Principais Músicas:</strong></p>
+                <ul class="musicas">
+                    ${data.principaisMusicas.map(musica => `<li><a href="${musica.link}" target="_blank">${musica.titulo}</a></li>`).join('')}
+                </ul>
+                <p><strong>Biografia:</strong> ${data.biografia}</p>
+                <div>
+                    ${data.imagens.map(imagem => `<img src="${imagem}" alt="${data.nome}">`).join('')}
+                </div>
+            `;
+        }
+
+        // Chama a função para exibir as informações
+        displayArtistInfo(matueData);
+    </script>
 </body>
 </html>

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu E-commerce - Academia</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
-        <h1>Meu E-commerce - Academia</h1>
+        <h1 onclick="location.href ='index.html'">PerformancePlus+</h1>
         <nav>
             <ul>
                 <li><a href="#produtos">Produtos</a></li>
@@ -24,58 +25,58 @@
                 <div class="produto">
                     <h3>Haltere Ajustável</h3>
                     <img src="https://m.media-amazon.com/images/I/51Jf7cNr7xL._AC_SX679_.jpg" alt="Haltere Ajustável" class="produto-img" >
-                    <p>Descrição: Haltere ajustável, ideal para treinos em casa.</p>
-                    <p>Preço: R$ 299,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <p class="desc">Descrição: Haltere ajustável, ideal para treinos em casa.</p>
+                    <p class="desc">Preço: R$ 299,90</p>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
                 <div class="produto">
                     <h3>Colchonete de Yoga</h3>
                     <img src="https://images.tcdn.com.br/img/img_prod/754222/tapete_yoga_pilates_exercicios_com_bolsa_183x61x1_0cm_201_1_5923296fc98130249fee7a444524b07b.jpg" alt="Colchonete de Yoga" class="produto-img">
-                    <p>Descrição: Colchonete confortável para práticas de yoga e pilates.</p>
-                    <p>Preço: R$ 149,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <p class="desc">Descrição: Colchonete confortável para práticas de yoga e pilates.</p>
+                    <p class="desc">Preço: R$ 35,99</p>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
                 <div class="produto">
                     <h3>Bola de Estabilidade</h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQaLx4kqjL_X2cQAx0zzYtEr7iUa5vks1o5Q&s" alt="Bola de Estabilidade" class="produto-img" style="width: 450px; height: 350px;">
-                    <p>Ideal para exercícios de força e equilíbrio.</p>
-                    <p>Preço: R$ 79,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <p class="desc">Ideal para exercícios de força e equilíbrio.</p>
+                    <p class="desc">Preço: R$ 79,90</p>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
                 <div class="produto">
                     <h3>Faixa Elástica de Resistência</h3>
                     <img src="https://images.tcdn.com.br/img/img_prod/920975/faixa_elastica_extensor_exercicio_em_casa_academia_resistencia_fitness_pilates_1463_1_e69ce7b4612c40058c6d0dc5a5e2231c.jpg" alt="Faixa Elástica de Resistência" class="produto-img">
-                    <p>Perfeita para treinos de força e alongamento.</p>
-                    <p>Preço: R$ 39,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <p class="desc">Perfeita para treinos de força e alongamento.</p>
+                    <p class="desc">Preço: R$ 19,90</p>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
                 <div class="produto">
                     <h3>Roupas de Treino</h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFagPvzQXF0xQeByfrRSzHpEao5IVi32FwQ&s" alt="Roupas de Treino" class="produto-img">
-                    <p>Conjunto confortável para atividades físicas.</p>
-                    <p>Preço: R$ 149,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <p class="desc">Conjunto confortável para atividades físicas.</p>
+                    <p class="desc">Preço: R$ 149,90</p>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
                 <div class="produto">
                     <h3>Suplemento Protein</h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6w87zj2SLgZMUYZMANCQj5NUSVojE3TjwJQ&s" alt="Suplemento Protein" class="produto-img">
-                    <p>Suplemento de proteína para recuperação muscular.</p>
-                    <p>Preço: R$ 199,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <p class="desc">Suplemento de proteína para recuperação muscular.</p>
+                    <p class="desc">Preço: R$ 110,90</p>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
                 <div class="produto">
                     <h3>Garrafa de Água</h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSP3SEK4GJvGm5lcM7bnhEh8FVB0gV_kiWg&s" alt="Garrafa de Água" class="produto-img">
                     <p>Garrafa de água reutilizável, ideal para treinos.</p>
                     <p>Preço: R$ 29,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
                 <div class="produto">
                     <h3>Kit de Acessórios para Treino</h3>
                     <img src="https://images.tcdn.com.br/img/img_prod/1042861/kit_academia_treino_funcional_com_42_pecas_1687_1_68ce2a10d1868d5e87a56b17daf4c79f.jpg" alt="Kit de Acessórios para Treino" class="produto-img">
-                    <p>Inclui faixas, corda e outros acessórios.</p>
-                    <p>Preço: R$ 99,90</p>
-                    <button>Adicionar ao Carrinho</button>
+                    <p class="desc">Inclui faixas, corda e outros acessórios.</p>
+                    <p class="desc">Preço: R$ 99,90</p>
+                    <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
             </div>
         </section>
@@ -92,7 +93,7 @@
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" required></textarea>
 
-                <button type="submit">Enviar</button>
+                <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
             </form>
         </section>
     </main>
@@ -110,12 +111,22 @@
         }
         
         header {
-            background-color: #007BFF;
+            background: linear-gradient(to right, #59575f, #784ef7);
             color: white;
             padding: 10px 0;
             text-align: center;
+            
         }
-        
+
+        h3 {
+            color: #fffdfd;
+        }
+
+        .desc {
+            color: #fffdfd;
+        }
+
+
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -144,10 +155,10 @@
         }
 
         .produto {
-            border: 1px solid #ccc;
+            border: 1px solid #dd1b1b;
             padding: 15px;
             margin: 10px;
-            background-color: white;
+            background-color: rgb(56, 53, 53);
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: calc(25% - 20px); /* 4 produtos por linha */
@@ -169,7 +180,7 @@
         footer {
             text-align: center;
             padding: 10px 0;
-            background-color: #333;
+            background-color: #423d3d;
             color: white;
             position: relative;
             bottom: 0;
@@ -181,21 +192,54 @@
             flex-direction: column;
         }
 
+        h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+    
         label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #fffdfd;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+    
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+        .botao {
             margin-top: 10px;
+            padding: 10px;
+            background-color: #1f6fb1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
-        input, textarea {
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .botao:hover {
+            background-color: #0f1310;
         }
 
         button {
             margin-top: 10px;
             padding: 10px;
-            background-color: #28a745;
+            background-color: #1f6fb1;
             color: white;
             border: none;
             border-radius: 4px;
@@ -203,8 +247,10 @@
         }
 
         button:hover {
-            background-color: #218838;
+            background-color: #0f1310;
         }
+
+        
 
         @media (max-width: 768px) {
             .produto {
@@ -218,5 +264,7 @@
             }
         }
     </style>
+
+    <script src="script.js"></script>
 </body>
 </html>
