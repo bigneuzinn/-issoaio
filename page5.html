@@ -67,10 +67,11 @@
                 <div class="produto">
                     <h3>Garrafa de Água</h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSP3SEK4GJvGm5lcM7bnhEh8FVB0gV_kiWg&s" alt="Garrafa de Água" class="produto-img">
-                    <p>Garrafa de água reutilizável, ideal para treinos.</p>
-                    <p>Preço: R$ 29,90</p>
+                    <p class="desc">Garrafa de água reutilizável, ideal para treinos.</p>
+                    <p class="desc">Preço: R$ 29,90</p>
                     <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
                 </div>
+
                 <div class="produto">
                     <h3>Kit de Acessórios para Treino</h3>
                     <img src="https://images.tcdn.com.br/img/img_prod/1042861/kit_academia_treino_funcional_com_42_pecas_1687_1_68ce2a10d1868d5e87a56b17daf4c79f.jpg" alt="Kit de Acessórios para Treino" class="produto-img">
@@ -93,7 +94,7 @@
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" required></textarea>
 
-                <input type="button" onclick="apertar()" class="botao" value="Adicionar ao carrinho">
+                <input type="button" onclick="location.href" class="botao" value="Enviar">
             </form>
         </section>
     </main>
@@ -265,6 +266,16 @@
         }
     </style>
 
-    <script src="script.js"></script>
+    <script>
+        
+        function apertar(){
+            Swal.fire({
+        title: "Concluído!",
+        text: "Item Adicionado ao carrinho!",
+        icon: "success"
+        });
+        }
+
+    </script>
 </body>
 </html>

@@ -1,22 +1,135 @@
 [
     {
-    "id": 987,
-    "cpf": 12345678900,
-    "nome": "Vinicius",
-    "sobrenome": "Lucas",
-    "cidade": "São Paulo",
-    "pais": "Brasil",
-    "imagem": "<img src='img/matue.jpg' width='200px'>",
-    "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "id": 987,
+        "cpf": 15,
+        "nome": "Vinicius",
+        "sobrenome": "Lucas",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/gustavogomez.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
     },
+    
     {
-    "id": 987,
-    "cpf": 1234,
-    "nome": "Vinicius",
-    "sobrenome": "Lucas",
-    "cidade": "São Paulo",
-    "pais": "Brasil",
-    "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-    "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "id": 533,
+        "cpf": 16,
+        "nome": "Otavio",
+        "sobrenome": "Vinicius",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>"    
+    },
+
+    {
+        "id": 765,
+        "cpf": 22,
+        "nome": "Laura",
+        "sobrenome": "Mayumi",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+
+
+    {
+        "id": 378,
+        "cpf": 23,
+        "nome": "Sofia",
+        "sobrenome": "Alcantara",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+
+    {
+        "id": 120,
+        "cpf": 5,
+        "nome": "Joao",
+        "sobrenome": "Victor",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+
+    {
+        "id": 733,
+        "cpf": 27,
+        "nome": "Joao",
+        "sobrenome": "Pedro",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+
+    {
+        "id": 431,
+        "cpf": 7,
+        "nome": "Rafaela",
+        "sobrenome": "Reinará",
+        "cidade": "São Paulo",
+         "pais": "Brasil",
+        "imagem": "<img src='img/matue.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+
+    {
+        "id": 767,
+        "cpf": 41,
+        "nome": "Isabela",
+        "sobrenome": "Rogério",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+         "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+            
+    {
+        "id": 232,
+        "cpf": 48,
+        "nome": "Manuela",
+        "sobrenome": "Aplique",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+            
+            
+    {
+        "id": 542,
+        "cpf": 76736718312,
+        "nome": "Marina",
+        "sobrenome": "Malandrider",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+            
+    {
+        "id": 922,
+        "cpf": 45142126537,
+        "nome": "Igor",
+        "sobrenome": "Topeira",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+    },
+            
+    {
+        "id": 943,
+        "cpf": 63152162637,
+        "nome": "Mão",
+        "sobrenome": "Boba",
+        "cidade": "São Paulo",
+        "pais": "Brasil",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
+        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
     }
 ]
+

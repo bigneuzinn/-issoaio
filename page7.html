@@ -7,112 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>E-commerce API - Musicas</h1>
+    <h1>CPF</h1>
+<div class="quadrado"></div>
+    <div class="borda"></div>
+        <div class="center"></div>
     <div id="imagem"></div>
     <div id="nome"></div>
     <div id="sobrenome"></div>
     <div id="cidade"></div>
     <div id="pais"></div>
-    <div id="link"></div>
 
     <input type="number" id="valor" placeholder="Digite o CPF">
     <div id="erro"></div>
-    <button onclick="buscar()">Buscar</button>
-
-
-    <style>
-    
-    body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1e183c, #5d4a98);
-    padding: 20px;
-}
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #d1d1d1;
-}
-
-.imagem {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.img-perfil {
-    max-width: 100%;
-    border-radius: 50%;
-}
-
-.info {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #555;
-}
-
-.input-cpf {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.input-container {
-    margin: 20px 0;
-    text-align: center; /* Centraliza o conteúdo */
-}
-
-.input-cpf {
-    width: 80%; /* Aumenta a largura do campo */
-    padding: 12px; /* Aumenta o espaço interno */
-    margin: 10px 0; /* Espaço entre o campo e outros elementos */
-    border: 1px solid #ddd; /* Borda leve */
-    border-radius: 4px; /* Bordas arredondadas */
-    font-size: 16px; /* Aumenta o tamanho da fonte */
-    transition: border-color 0.3s; /* Efeito de transição */
-}
-
-.input-cpf:focus {
-    border-color: #28a745; /* Cor da borda ao focar */
-    outline: none; /* Remove a borda padrão */
-}
-
-.botao {
-    width: 85%; /* Largura do botão */
-    padding: 12px; /* Aumenta o espaço interno */
-    background-color: #28a745; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
-    border-radius: 4px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor para pointer */
-    font-size: 16px; /* Aumenta o tamanho da fonte */
-    transition: background-color 0.3s; /* Efeito de transição */
-}
-
-.botao:hover {
-    background-color: #218838; /* Cor de fundo ao passar o mouse */
-}
-
-.erro {
-    color: red; /* Cor da mensagem de erro */
-    margin-top: 10px; /* Espaço acima da mensagem de erro */
-    font-size: 14px; /* Tamanho da fonte da mensagem de erro */
-    display: none; /* Oculta a mensagem inicialmente */
-}
-
-    </style>
-
-    <script>
-        
+    <center>
+    <button style="background-color:rgb(241, 238, 186);" onclick="buscar()">Buscar</button>
+    </center>
+    <script >
         //Função para consumir API
 function buscar() {
     //carrega o JSON e processa os dados
@@ -123,6 +33,7 @@ function buscar() {
         corpo.forEach(pessoa => {
 
         if (identificador == pessoa.cpf) {
+            //JQUERY
             var link1 = `<a href="${pessoa.link}">Visite nosso site</a>`
             document.getElementById('nome').innerHTML = pessoa.nome;
             document.getElementById('sobrenome').innerHTML = pessoa.sobrenome;
@@ -130,19 +41,44 @@ function buscar() {
             document.getElementById('pais').innerHTML = pessoa.pais;
             document.getElementById('imagem').innerHTML = pessoa.imagem;
             document.getElementById('link').innerHTML = link1;
-        }  else {
-            document.getElementById('erro').innerHTML = ""
+            document.getElementById('erro').innerHTML = "";
             encontrado = true;
         }
             
     })
     if (!encontrado) {
-        document.getElementById('erro').innerHTML
+        document.getElementById('erro').innerHTML = "Registro inválido";
     }
-        console.log(corpo)
-    });
+    console.log(corpo)
+
+  })
 }
 
+// var identificador = document.getElementById('valor').value;
+// //Link com JQUERY
+// var link1 = `<a href="${dados1.link}">Visite nosso site</a>`;
     </script>
+
+    <style>
+       body{
+        position: absolute;
+        left: 75%;
+        top: 10%;
+        background: url(img/allianz.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+
+       .quadrado{
+        background-color: aquamarine;
+       }
+       .borda{
+        font-size: 22px;
+        color: black;
+        border: 2px solid rgb(243, 232, 232);
+        padding: 20px;
+       }
+</style>
+    
 </body>
 </html>
