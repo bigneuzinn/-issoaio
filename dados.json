@@ -2,20 +2,19 @@
     {
         "id": 987,
         "cpf": 15,
-        "nome": "Vinicius",
-        "sobrenome": "Lucas",
-        "cidade": "São Paulo",
-        "pais": "Brasil",
-        "imagem": "<img src='img/gustavogomez.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "nome": "Gustavo",
+        "sobrenome": "Gomez",
+        "cidade": "",
+        "pais": "Paraguai",
+        "imagem": "<img src='img/gustavogomez.jpg' width='200px'>"
     },
     
     {
         "id": 533,
         "cpf": 16,
-        "nome": "Otavio",
-        "sobrenome": "Vinicius",
-        "cidade": "São Paulo",
+        "nome": "Caio",
+        "sobrenome": "Paulista",
+        "cidade": "Rio de janeiro",
         "pais": "Brasil",
         "imagem": "<img src='img/matue-1.jpg' width='200px'>"    
     },
@@ -23,113 +22,103 @@
     {
         "id": 765,
         "cpf": 22,
-        "nome": "Laura",
-        "sobrenome": "Mayumi",
-        "cidade": "São Paulo",
-        "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "nome": "Joaquim",
+        "sobrenome": "Piquerez",
+        "cidade": "Montevideo",
+        "pais": "Uruguai",
+        "imagem": "<img src='img/matue-1.jpg' width='200px'>"
     },
 
 
     {
         "id": 378,
         "cpf": 23,
-        "nome": "Sofia",
-        "sobrenome": "Alcantara",
+        "nome": "Raphael",
+        "sobrenome": "Veiga",
         "cidade": "São Paulo",
         "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "imagem": "<img src='img/veiga.jpg' width='200px'>"
     },
 
     {
         "id": 120,
         "cpf": 5,
-        "nome": "Joao",
-        "sobrenome": "Victor",
+        "nome": "Anibal",
+        "sobrenome": "Moreno",
         "cidade": "São Paulo",
-        "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "pais": "Argentina",
+        "imagem": "<img src='img/anibal.jpg' width='200px'>"
     },
 
     {
         "id": 733,
         "cpf": 27,
-        "nome": "Joao",
-        "sobrenome": "Pedro",
+        "nome": "Richard",
+        "sobrenome": "Rios",
         "cidade": "São Paulo",
         "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "imagem": "<img src='img/rios.jpg' width='200px'>"
     },
 
     {
         "id": 431,
         "cpf": 7,
-        "nome": "Rafaela",
-        "sobrenome": "Reinará",
+        "nome": "Eduardo",
+        "sobrenome": "Pereira",
         "cidade": "São Paulo",
          "pais": "Brasil",
-        "imagem": "<img src='img/matue.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "imagem": "<img src='img/dudu.jpg' width='200px'>"
     },
 
     {
         "id": 767,
         "cpf": 41,
-        "nome": "Isabela",
-        "sobrenome": "Rogério",
+        "nome": "Estevão",
+        "sobrenome": "Willian",
         "cidade": "São Paulo",
         "pais": "Brasil",
-         "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+         "imagem": "<img src='img/estevão.jpeg' width='200px'>"
     },
             
     {
         "id": 232,
         "cpf": 48,
-        "nome": "Manuela",
-        "sobrenome": "Aplique",
+        "nome": "Flaco",
+        "sobrenome": "Lopes",
         "cidade": "São Paulo",
         "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "imagem": "<img src='img/flaco.jpg' width='200px'>"
     },
             
             
     {
         "id": 542,
-        "cpf": 76736718312,
-        "nome": "Marina",
-        "sobrenome": "Malandrider",
+        "cpf": 12,
+        "nome": "Mayke",
+        "sobrenome": "Oliveira",
         "cidade": "São Paulo",
         "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "imagem": "<img src='img/Mayke.jpg' width='200px'>"
     },
             
     {
         "id": 922,
-        "cpf": 45142126537,
-        "nome": "Igor",
-        "sobrenome": "Topeira",
+        "cpf": 25,
+        "nome": "Gabriel",
+        "sobrenome": "Menino",
         "cidade": "São Paulo",
         "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "imagem": "<img src='img/Gabriel.jpg' width='200px'>"
     },
             
     {
         "id": 943,
-        "cpf": 63152162637,
-        "nome": "Mão",
-        "sobrenome": "Boba",
+        "cpf": 26,
+        "nome": "Murilo",
+        "sobrenome": "Cerqueira",
         "cidade": "São Paulo",
         "pais": "Brasil",
-        "imagem": "<img src='img/matue-1.jpg' width='200px'>",
-        "link": "https://www.letras.mus.br/matue/maquina-do-tempo/"
+        "imagem": "<img src='img/murilo.jpg' width='200px'>"
     }
 ]
 

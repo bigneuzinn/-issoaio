@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>CPF</h1>
+    <h1>Jogadores do palmeiras</h1>
 <div class="quadrado"></div>
     <div class="borda"></div>
         <div class="center"></div>
@@ -17,10 +17,10 @@
     <div id="cidade"></div>
     <div id="pais"></div>
 
-    <input type="number" id="valor" placeholder="Digite o CPF">
+    <input type="number" id="valor" placeholder="Digite o numero da camisa">
     <div id="erro"></div>
     <center>
-    <button style="background-color:rgb(241, 238, 186);" onclick="buscar()">Buscar</button>
+    <button onclick="buscar()">Buscar</button>
     </center>
     <script >
         //Função para consumir API
@@ -60,25 +60,65 @@ function buscar() {
     </script>
 
     <style>
-       body{
-        position: absolute;
-        left: 75%;
-        top: 10%;
-        background: url(img/allianz.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-       }
-
-       .quadrado{
-        background-color: aquamarine;
-       }
-       .borda{
-        font-size: 22px;
-        color: black;
-        border: 2px solid rgb(243, 232, 232);
-        padding: 20px;
-       }
-</style>
-    
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://img.band.uol.com.br/image/2024/01/28/allianz-parque-175447_800x450.webp') no-repeat center center fixed; /* Replace with your background image URL */
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #f9f900; /* Bright yellow */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            background: rgba(0, 100, 0, 0.8); /* Dark green with transparency */
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        input[type="number"] {
+            padding: 10px;
+            width: calc(100% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            background-color: #f9f900; /* Bright yellow */
+            color: #006400; /* Palmeiras green */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #e0e000; /* Darker yellow */
+            transform: scale(1.05);
+        }
+        .info {
+            margin-top: 20px;
+        }
+        .info div {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+        }
+        #erro {
+            color: #ff0000; /* Error message color */
+            font-weight: bold;
+        }
+    </style>
+   
 </body>
 </html>
