@@ -23,10 +23,22 @@ fetch(apiUrl)
                 <h3>${produto.nome}</h3>
                 <p>${produto.desc}</p>
                 <span>${produto.preco}</span>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
             `;
 
             // Insere no container de produtos
             produtosContainer.appendChild(produtoDiv);
+
+            // Adiciona evento de clique no botão "Adicionar ao Carrinho"
+            const botaoAdicionar = produtoDiv.querySelector('.adicionar-carrinho');
+            botaoAdicionar.addEventListener('click', () => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Item adicionado ao carrinho!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
         });
     })
     .catch(error => {
